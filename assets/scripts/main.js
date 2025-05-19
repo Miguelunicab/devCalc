@@ -7,11 +7,15 @@ if (localStorage.getItem('devcalc_darkMode') == 'true') {
 /* Functions */
 
 function calculateRem(PxValue) {
-     return PxValue / 16;
+     return (PxValue / 16);
 }
 
 function calculateDistance(Height, top, top2) {
-     return (top2 - (top + Height)) / 16;
+     Height = parseInt(Height);
+     top = parseInt(top);
+     top2 = parseInt(top2);
+     
+     return (top2 - (Height + top)) / 16;
 }
 
 /* Theme Btns */
@@ -42,20 +46,23 @@ $(document).ready(function() {
      });
 
      let objHeight = 0;
-     let objTop = 0;
      let obj2Top = 0;
+     let objTop = 0;
      $('#distanceCalc-Height').on("input", function() {
           objHeight = $('#distanceCalc-Height').val();
           $('#distanceCalc-Result').val(`${calculateDistance(objHeight, objTop, obj2Top)}rem`);
+          console.log(objHeight, objTop, obj2Top);
      });
 
-     $('#distanceCalc-Top').on("input", function() {
-          objTop = $('#distanceCalc-Top').val();
+     $('#distanceCalc-Top1').on("input", function() {
+          objTop = $('#distanceCalc-Top1').val();
           $('#distanceCalc-Result').val(`${calculateDistance(objHeight, objTop, obj2Top)}rem`);
+          console.log(objHeight, objTop, obj2Top);
      });
      
      $('#distanceCalc-Top2').on("input", function() {
           obj2Top = $('#distanceCalc-Top2').val();
           $('#distanceCalc-Result').val(`${calculateDistance(objHeight, objTop, obj2Top)}rem`);
+          console.log(objHeight, objTop, obj2Top);
      });
 });
