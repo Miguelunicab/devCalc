@@ -1,3 +1,7 @@
+:root {
+     --jetbrains-font: url(../fonts/JetBrainsMono-Regular.ttf);
+}
+
 /* Utilities */
 .border-gray {
      border-color: #b9b9b9 !important;
@@ -15,6 +19,10 @@
 
 .tx-main {
      color: #000000;
+}
+
+.tx-jetbrains {
+     font-family: var(--jetbrains-font), sans-serif !important;
 }
 
 /* Main btns */
@@ -38,6 +46,7 @@ input::-webkit-inner-spin-button {
 
 input[type=number] {
   -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .inputs-pxCalc {
@@ -62,6 +71,75 @@ input[type=number] {
      color: #000000;
 }
 
+.main-example {
+     border-radius: .5rem;
+     background-color: #1e1e1f;
+     width: 100%;
+     height: 100%;
+}
+
+.main-exampleBlock {
+     border-radius: 1rem;
+     width: 100%;
+     color: #ffffff;
+     background-color: red;
+     padding: 1.5rem 1rem;
+}
+
+.main-exampleBlock2 {
+     border-radius: 1rem;
+     width: 100%;
+     color: #000000;
+     background-color: greenyellow;
+     padding: 1.5rem 1rem;
+}
+
+.code-example {
+     border-radius: .5rem;
+     background-color: #1e1e1f;
+     width: 100%;
+     height: 100%;
+}
+
+.code-example h5,
+.code-example p {
+     color: #ffffff;
+}
+
+.line {
+     color: #8b8b8b;
+     margin-right: 1rem;
+     position: relative;
+}
+
+.line::after {
+     display: inline-block;
+     position: absolute;
+     content: "";
+     width: 1px;
+     height: 100%;
+     background-color: #797979;
+
+     right: -.6rem;
+}
+
+.codeClass {
+     color: rgb(129, 255, 255);
+}
+
+.codeBrackets {
+     color: yellow;
+}
+
+.codeProperty {
+     color: rgb(54, 255, 47);
+     margin-left: 2rem;
+}
+
+.codeValue {
+     color: yellow;
+}
+
 /* Dark-mode */
 
 .dark {
@@ -70,6 +148,14 @@ input[type=number] {
 
 .dark .nav-title {
      color: #FFF;
+}
+
+.dark .main-example {
+     background-color: #39393b;
+}
+
+.dark .code-example {
+     background-color: #39393b;
 }
 
 /* Utilities */
