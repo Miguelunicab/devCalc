@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Calculator</title>
+     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+     <link rel="stylesheet" href="assets/scripts/main.css">
+</head>
+<body>
+     <header class="py-3 border-bottom border-2 border-gray">
+          <div class="container">
+               <nav class="row">
+                    <div class="col-lg-2 d-flex align-items-center">
+                         <h2 class="nav-title">DevCalc</h2>
+                    </div>
+                    <div class="col-lg-9"></div>
+                    <div class="col-lg-1">
+                         <a role="button" id="darkMode">
+                              <img src="assets/imgs/moon.png" alt="">
+                         </a>
+                         <a role="button" id="lightMode" class="d-none">
+                              <img src="assets/imgs/sun.png" alt="">
+                         </a>
+                    </div>
+               </nav>
+          </div>
+     </header>
+
+     <section class="container my-7rem">
+          <div class="row">
+               <div class="col-lg-12">
+                    <h1 class="text-center tx-main">Conversiones, de una forma mas facil.</h1>
+               </div>
+          </div>
+
+          <div class="row mt-3">
+               <div class="col-lg-3"></div>
+
+               <div class="col-lg-6">
+                    <h4 class="text-center tx-main">Aqui encontraras los recursos mas comunes que necesitas en tu dia a dia como desarrollador web, calculadoras de px a rem, y mucho mas. </h4>
+               </div>
+
+               <div class="col-lg-3"></div>
+          </div>
+     </section>
+
+     <section class="container my-7rem mb-4">
+          <div class="row mt-3">
+               <div class="col-lg-3"></div>
+
+               <div class="col-lg-6">
+                    <h4 class="text-center tx-main">¿Necesitas pasar rapido pixeles a la medida REM?, Prueba nuestra..</h4>
+               </div>
+
+               <div class="col-lg-3"></div>
+          </div>
+     </section>
+     
+     <section class="container mt-3 my-4rem">
+          <div class="row">
+               <div class="col-lg-12">
+                    <h2 class="text-center tx-main">Calculadora de PX a REM.</h2>
+               </div>
+          </div>
+
+          <div class="row">
+               <div class="col-lg-1"></div>
+               <div class="col-lg-5">
+                    <input id="remCalc-Input" type="number" class="w-100 inputs-pxCalc" placeholder="Inserta el valor en Pixeles.">
+               </div>
+               <div class="col-lg-5">
+                    <input id="remCalc-Result" type="text" class="w-100 inputs-pxCalc" placeholder="Valor en REM se mostrara aqui." readonly>
+               </div>
+               <div class="col-lg-1"></div>
+          </div>
+     </section>
+
+
+     <section class="container my-7rem mb-4">
+          <div class="row mt-3">
+               <div class="col-lg-3"></div>
+
+               <div class="col-lg-6">
+                    <h4 class="text-center tx-main">¿Te entregaron un diseño sin una medida para los margins?, Prueba nuestra..</h4>
+               </div>
+
+               <div class="col-lg-3"></div>
+          </div>
+     </section> 
+     <section class="container mt-3 my-4rem">
+          <div class="row">
+               <div class="col-lg-12">
+                    <h2 class="text-center tx-main">Calculadora de distancias en REM.</h2>
+               </div>
+          </div>
+
+          <div class="row">
+               <div class="col-lg-1"></div>
+               <div class="col-lg-11">
+                    <h4 class="tx-main">Objeto posicionado arriba.</h4>
+               </div>
+          </div>
+          <div class="row">
+               <div class="col-lg-1"></div>
+               <div class="col-lg-5">
+                    <h5 class="tx-main">Valor Height:</h5>
+                    <input id="distanceCalc-Height" type="number" class="w-100 inputs-pxCalc" placeholder="Inserta el valor en Pixeles.">
+               </div>
+               <div class="col-lg-5">
+                    <h5 class="tx-main">Valor Top:</h5>
+                    <input id="distanceCalc-Top1" type="number" class="w-100 inputs-pxCalc" placeholder="Inserta el valor en Pixeles.">
+               </div>
+               <div class="col-lg-1"></div>
+          </div>
+
+          <div class="row mt-5">
+               <div class="col-lg-1"></div>
+               <div class="col-lg-11">
+                    <h4 class="tx-main">Objeto posicionado abajo.</h4>
+               </div>
+          </div>
+          <div class="row">
+               <div class="col-lg-1"></div>
+               <div class="col-lg-5">
+                    <h5 class="tx-main">Valor Top:</h5>
+                    <input id="distanceCalc-Top2" type="number" class="w-100 inputs-pxCalc" placeholder="Inserta el valor en Pixeles.">
+               </div>
+               <div class="col-lg-5">
+                    <h5 class="tx-main">Distancia en REM:</h5>
+                    <input id="distanceCalc-Result" type="text" class="w-100 inputs-pxCalc" placeholder="Valor en REM se mostrara aqui." readonly>
+               </div>
+               <div class="col-lg-1"></div>
+          </div>
+     </section>
+
+     <script src="bootstrap/js/bootstrap.js"></script>
+     <script src="libraries/jQuery/jquery-3-7-1.js"></script>
+     <script src="assets/scripts/main.js"></script>
+</body>
+</html>

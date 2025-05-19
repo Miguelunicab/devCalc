@@ -1,0 +1,83 @@
+/* Utilities */
+.border-gray {
+     border-color: #b9b9b9 !important;
+}
+
+.my-4rem {
+     margin-top: 4rem;
+     margin-bottom: 4rem;
+}
+
+.my-7rem {
+     margin-top: 7rem;
+     margin-bottom: 7rem;
+}
+
+.tx-main {
+     color: #000000;
+}
+
+/* Main btns */
+
+#lightMode img,
+#darkMode img {
+     width: 3rem;
+     height: 3rem;
+     object-fit: contain;
+}
+
+#lightMode {
+     filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(87deg) brightness(107%) contrast(101%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.inputs-pxCalc {
+     background-color: #333333;
+     border: none;
+
+     padding: 1rem;
+     font-size: 1.2rem;
+     color: #ffffff;
+     border-radius: .5rem;
+
+     appearance: textfield;
+}
+
+.inputs-pxCalc::placeholder {
+     color: #ffffff;
+}
+
+/* Light-mode */
+
+.nav-title {
+     color: #000000;
+}
+
+/* Dark-mode */
+
+.dark {
+     background-color: #1e1e1f;
+}
+
+.dark .nav-title {
+     color: #FFF;
+}
+
+/* Utilities */
+
+.dark .border-gray {
+     border-color: #333333 !important;
+}
+
+.dark .tx-main {
+     color: #ffffff !important;
+}
