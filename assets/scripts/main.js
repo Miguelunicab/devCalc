@@ -7,9 +7,10 @@ if (localStorage.getItem('devcalc_darkMode') == 'true') {
 /* Functions */
 
 function calculateRem(PxValue) {
-     return (PxValue / 16);
+     return (PxValue / 16).toFixed(2);
 }
 
+/*
 function calculateDistance(Height, top, top2) {
      Height = parseInt(Height);
      top = parseInt(top);
@@ -17,6 +18,7 @@ function calculateDistance(Height, top, top2) {
      
      return (top2 - (Height + top)) / 16;
 }
+*/
 
 /* Theme Btns */
 
@@ -45,6 +47,7 @@ $(document).ready(function() {
           $('#remCalc-Result').val(`${calculateRem(pxAmount)}rem`);
      });
 
+     /*
      let objHeight = 0;
      let obj2Top = 0;
      let objTop = 0;
@@ -65,4 +68,5 @@ $(document).ready(function() {
           $('#distanceCalc-Result').val(`${calculateDistance(objHeight, objTop, obj2Top)}rem`);
           console.log(objHeight, objTop, obj2Top);
      });
+     */
 });

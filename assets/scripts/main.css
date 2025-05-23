@@ -1,4 +1,5 @@
 :root {
+     --greenColor: #3cff9d;
      --jetbrains-font: url(../fonts/JetBrainsMono-Regular.ttf);
 }
 
@@ -7,14 +8,9 @@
      border-color: #b9b9b9 !important;
 }
 
-.my-4rem {
-     margin-top: 4rem;
-     margin-bottom: 4rem;
-}
-
-.my-7rem {
-     margin-top: 7rem;
-     margin-bottom: 7rem;
+.whitespace {
+     margin-top: 7.8rem;
+     margin-bottom: 7.8rem;
 }
 
 .tx-main {
@@ -23,6 +19,21 @@
 
 .tx-jetbrains {
      font-family: var(--jetbrains-font), sans-serif !important;
+}
+
+/* Positions */
+
+.col-3left {
+     padding-right: 8.33333333%;
+}
+
+.col-3center {
+     padding-left: 4.166666665%;
+     padding-right: 4.166666665%;
+}
+
+.col-3right {
+     padding-left: 8.33333333%;
 }
 
 /* Main btns */
@@ -140,6 +151,47 @@ input[type=number] {
      color: yellow;
 }
 
+.footer {
+     background-color: #333333;
+}
+
+.footer2 {
+     background-color: #1d1d1d;
+}
+
+.footer-text {
+     color: white;
+}
+
+.disabled-text {
+     color: #8b8b8b;
+}
+
+.footer a {
+     transition: color .2s ease;
+}
+
+.footer a:hover {
+     color: var(--greenColor);
+}
+
+.footer-icon {
+     color: transparent !important;
+}
+
+.footer-icon img {
+     height: 2rem;
+     width: 2rem;
+     
+     object-fit: contain;
+     margin-right: .5rem;
+     transition: transform .15s ease;
+}
+
+.footer-icon:hover img {
+     transform: rotate(4deg) scale(1.2);
+}
+
 /* Dark-mode */
 
 .dark {
@@ -156,6 +208,14 @@ input[type=number] {
 
 .dark .code-example {
      background-color: #39393b;
+}
+
+.dark .footer {
+     background-color: #111111;
+}
+
+.dark .footer2 {
+     background-color: #070707;
 }
 
 /* Utilities */
